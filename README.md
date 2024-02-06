@@ -12,8 +12,8 @@ It will be used by Kubevirt to offload Passt networking configuration.
 
 Deploy the `passt` binding plugin binary on the cluster:
 
-```sh
-TODO
+```yaml
+kubectl apply -f manifests/cni-ds.yaml
 ```
 
 Register the `passt` binding plugin with its sidecar image:
@@ -64,11 +64,6 @@ with the project. To learn more, read the code. A good place to start would be
 
 Software of this project is distributed under the terms of the Apache license
 version 2. See [LICENSE](LICENSE) for details.
-
-# Changelog
-
-Read the [CHANGELOG.md](CHANGELOG.md) to learn about changes introduced in each
-release.
 
 # TODO
 
