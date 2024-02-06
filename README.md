@@ -58,7 +58,7 @@ spec:
 
 See [DEVELOPMENT.md](DEVELOPMENT.md) to find some basic commands to interact
 with the project. To learn more, read the code. A good place to start would be
-TODO.
+[`cmd/*`](cmd/).
 
 # License
 
@@ -69,3 +69,10 @@ version 2. See [LICENSE](LICENSE) for details.
 
 Read the [CHANGELOG.md](CHANGELOG.md) to learn about changes introduced in each
 release.
+
+# TODO
+
+* GitHub actions to check PRs (format and build).
+* GitHub actions to publish new version.
+* Containerized runs of CNI tests.
+* Sidecar.

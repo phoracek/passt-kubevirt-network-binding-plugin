@@ -26,7 +26,7 @@ import (
 	"github.com/containernetworking/cni/pkg/version"
 	bv "github.com/containernetworking/plugins/pkg/utils/buildversion"
 
-	"github.com/phoracek/passt-kubevirt-network-binding-plugin/internal/cni"
+	passtcni "github.com/phoracek/passt-kubevirt-network-binding-plugin/internal/cni"
 )
 
 func init() {
@@ -37,5 +37,5 @@ func init() {
 }
 
 func main() {
-	skel.PluginMain(cni.CmdAdd, cni.CmdCheck, cni.CmdDel, version.All, bv.BuildString("passt-binding"))
+	skel.PluginMain(passtcni.CmdAdd, passtcni.CmdCheck, passtcni.CmdDel, version.All, bv.BuildString("passt-binding"))
 }
